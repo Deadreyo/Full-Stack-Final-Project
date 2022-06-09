@@ -7,7 +7,7 @@ import { IndexRouter } from "./controllers/v0/index.router";
 
 import bodyParser from "body-parser";
 import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
-52111212;
+
 (async () => {
   dotenv.config();
 
