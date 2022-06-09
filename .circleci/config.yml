@@ -37,6 +37,9 @@ jobs:
       - run:
           name: "Frontend Deploy"
           command: "npm run frontend:deploy"
+      - run:
+          name: "Backend Deploy"
+          command: "npm run backend:deploy"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
