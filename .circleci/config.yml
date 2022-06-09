@@ -25,9 +25,12 @@ jobs:
       - run:
           name: "Frontend Build"
           command: "npm run frontend:build"
+      # - run:
+      #     name: "Backend Build"
+      #     command: "npm run backend:build"
       - run:
-          name: "Backend Build"
-          command: "npm run backend:build"
+          name: "Frontend Test"
+          command: "npm run frontend:test"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
