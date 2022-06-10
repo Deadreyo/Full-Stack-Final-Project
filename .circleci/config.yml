@@ -35,6 +35,9 @@ jobs:
           name: "Backend Build"
           command: "npm run backend:build"
       - run:
+          name: "Backend Prepare Env Variables"
+          command: "npm run backend:prepareEnv"
+      - run:
           name: "Frontend Deploy"
           command: "npm run frontend:deploy"
       - run:
@@ -47,3 +50,7 @@ workflows:
   build-workflow:
     jobs:
       - build
+          filters:
+            branches:
+              only: main
+
