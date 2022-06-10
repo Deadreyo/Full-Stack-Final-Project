@@ -1,6 +1,13 @@
 import { Sequelize } from "sequelize-typescript";
 import { config } from "./config/config";
 
+console.log("config", config);
+console.log("config.username", config.username);
+console.log("config.password", config.password);
+console.log("config.database", config.database);
+console.log("config.port", config.port);
+console.log("config.dbPort", config.dbPort);
+console.log("config.host", config.host);
 export const sequelize = new Sequelize({
   username: config.username,
   password: config.password,
